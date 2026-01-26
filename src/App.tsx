@@ -8,6 +8,9 @@ import {
 import cover from "./assets/covermain.avif";
 import profile from "./assets/profile.png";
 function App() {
+  const phoneNumber = "9779863167897";
+  const message = "Hello! I have a question.";
+
   return (
     <div className="w-full md:max-w-7xl md:mx-auto min-h-screen flex justify-center items-center text-[#67536C] font-inter bg-red-0">
       <div className="relative flex flex-col w-full max-w-[480px] md:mx-auto border-[#67536C]/50 rounded-4xl border-2 mx-4 p-1.5">
@@ -41,7 +44,13 @@ function App() {
             </div>
             <div>
               <button className="px-5 py-2 bg-[#67536C] text-white rounded-full">
-                Contact
+                <a
+                  href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact
+                </a>
               </button>
             </div>
           </div>
@@ -72,6 +81,8 @@ function App() {
           </div>
           {/* contact icon */}
         </div>
+        {}
+
         <div className="flex justify-center gap-8 text-2xl my-7">
           <FaFacebook></FaFacebook>
           <FaInstagram></FaInstagram>
