@@ -12,7 +12,7 @@ function App() {
   const message = "Hello! I have a question.";
 
   return (
-    <div className="w-full md:max-w-7xl md:mx-auto min-h-screen flex justify-center items-center text-[#67536C] font-inter ">
+    <div className="w-full md:max-w-7xl md:mx-auto  min-h-dvh flex justify-center items-center text-[#67536C] font-inter ">
       <div className="relative flex flex-col w-full max-w-[480px] md:mx-auto border-[#67536C]/50 rounded-4xl border-2 mx-4 p-1.5">
         <div className="relative w-full">
           <div className="w-full h-[135px] sm:h-[160px]">
@@ -34,13 +34,13 @@ function App() {
         <div className="flex flex-col text-left mt-16 sm:mt-18 gap-4 sm:gap-5 px-6">
           {/* intro */}
           <div className="flex justify-between gap-2 items-center font-poppins">
-            <div className="-space-y-1">
-              <h1 className="font-bold text-[22px] sm:text-[24px] text-[#1F242F]">
+            <div className="space-y-0">
+              <h1 className="font-bold text-[22px] sm:text-[24px] text-[#1F242F] leading-6.5">
                 Ronash Chitrakar
               </h1>
               <h3 className="opacity-90 text-[6B7387] text-[14px] sm:text-[16px] cursor-pointer">
                 <a href="https://www.instagram.com/tentacles.v?igsh=ZTNuZWYydWc3eXM1">
-                  {" "}
+                
                   @tentacles.v
                 </a>
               </h3>
@@ -69,7 +69,7 @@ function App() {
               </span>
             </h2>
 
-            <p className="text-[15px] sm:text-[16px] opacity-90 py-2 leading-6git sm:leading-7.5">
+            <p className="text-[15px] sm:text-[16px] opacity-90 py-2 leading-6 sm:leading-7.5">
               I design user-focused digital experiences and scalable growth
               strategies for eCommerce brands, combining UI/UX, marketing,
               social media, and content shoots to drive engagement and
