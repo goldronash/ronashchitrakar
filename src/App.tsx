@@ -22,24 +22,27 @@ function App() {
               className="h-full w-full object-cover rounded-4xl"
             />
           </div>
-          <div className="absolute w-[120px] sm:w-[125px] border-0 border-black left-4 -bottom-[40%]">
+          <div className="absolute w-[120px] sm:w-[115px] border-0 border-black left-4 -bottom-[40%]">
             <img
               src={profile}
               alt=""
-              className="h-full w-full border-white border-6 object-cover rounded-full"
+              className="h-full w-full border-white border-6 object-cover rounded-full hover:scale-[1.05] transition-all"
             />
           </div>
         </div>
 
         <div className="flex flex-col text-left mt-16 sm:mt-18 gap-4 sm:gap-5 px-6">
           {/* intro */}
-          <div className="flex justify-between items-center font-poppins">
+          <div className="flex justify-between gap-2 items-center font-poppins">
             <div className="-space-y-1">
               <h1 className="font-bold text-[22px] sm:text-[24px] text-[#1F242F]">
                 Ronash Chitrakar
               </h1>
-              <h3 className="opacity-90 text-[6B7387] text-[14px] sm:text-[16px]">
-                @tentacles.v
+              <h3 className="opacity-90 text-[6B7387] text-[14px] sm:text-[16px] cursor-pointer">
+                <a href="https://www.instagram.com/tentacles.v?igsh=ZTNuZWYydWc3eXM1">
+                  {" "}
+                  @tentacles.v
+                </a>
               </h3>
             </div>
             <div>
@@ -48,7 +51,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="px-5 py-2 bg-[#67536C]  text-white rounded-full">
+                <button className="px-5 py-2 bg-[#67536C]  text-white rounded-full cursor-pointer hover:bg-[#353535] transition-all hover:scale-[1.05]">
                   Contact
                 </button>
               </a>
@@ -66,7 +69,7 @@ function App() {
               </span>
             </h2>
 
-            <p className="text-[15px] sm:text-[16px] opacity-90 py-2 leading-6 sm:leading-7.5">
+            <p className="text-[15px] sm:text-[16px] opacity-90 py-2 leading-6git sm:leading-7.5">
               I design user-focused digital experiences and scalable growth
               strategies for eCommerce brands, combining UI/UX, marketing,
               social media, and content shoots to drive engagement and
@@ -82,16 +85,53 @@ function App() {
               </li>
             </ul>
           </div>
-          {/* contact icon */}
         </div>
-        {}
 
+        {/* social media links */}
         <div className="flex justify-center gap-8 text-2xl my-4 sm:my-7">
-          <FaFacebook></FaFacebook>
-          <FaInstagram></FaInstagram>
-          <FaLinkedin></FaLinkedin>
-          <FaYoutube></FaYoutube>
-          <FaTiktok></FaTiktok>
+          <a
+            href="https://www.facebook.com/share/1HFWKv2ga4/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:scale-115 hover:text-blue-600"
+          >
+            <FaFacebook />
+          </a>
+
+          <a
+            href="https://www.instagram.com/tentacles.v?igsh=ZTNuZWYydWc3eXM1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:scale-115 hover:text-pink-500"
+          >
+            <FaInstagram />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ronash-chitrakar-33500b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:scale-115 hover:text-blue-800"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:scale-115 hover:text-red-600"
+          >
+            <FaYoutube />
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@trentttfr?_r=1&_t=ZS-93NzLruZL0u"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition transform hover:scale-115 hover:text-black ">
+            <FaTiktok />
+          </a>
         </div>
       </div>
     </div>
