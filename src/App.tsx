@@ -3,7 +3,6 @@ import {
   FaInstagram,
   FaLinkedin,
   FaTiktok,
-  FaYoutube,
 } from "react-icons/fa";
 import cover from "./assets/covermain.avif";
 import profile from "./assets/profile.png";
