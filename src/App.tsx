@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import cover from "./assets/covermain.avif";
 import profile from "./assets/profile.png";
-import icon from "./assets/icon.png";
+import icon from "./assets/icon2.png";
 function App() {
   const phoneNumber = "9779863167897";
   const message = "Hello! I have a question.";
