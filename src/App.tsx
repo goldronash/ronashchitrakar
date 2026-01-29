@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="w-full md:max-w-7xl md:mx-auto  min-h-dvh flex justify-center items-center text-[#67536C] font-inter ">
-      <div className="relative flex flex-col w-full max-w-[480px] md:mx-auto border-[#67536C]/50 rounded-4xl border-2 mx-4 p-1.5 overflow-hidden">
+      <div className="relative flex flex-col w-full max-w-[480px] md:mx-auto border-[#67536C]/50 rounded-4xl border-2 mx-4 p-1.5 overflow-hidden shadow-2xl">
         <div className="relative w-full">
           <div className="group w-full h-33.75 sm:h-40">
             <img
@@ -43,8 +43,11 @@ function App() {
           {/* intro */}
           <div className="flex justify-between gap-2 items-center font-poppins">
             <div className="space-y-0">
-              <h1 className="font-bold text-[22px] sm:text-[24px] text-[#1F242F] leading-6.5">
+              <h1 className="hidden sm:block font-bold text-[22px] sm:text-[24px] text-[#1F242F] leading-6.5">
                 Ronash Chitrakar
+              </h1>
+              <h1 className="block sm:hidden font-bold text-[22px] sm:text-[24px] text-[#1F242F] leading-6.5">
+                Ronash C.
               </h1>
               <div className="relative group opacity-90 text-[14px] sm:text-[16px] cursor-pointer overflow-hidden ">
                 <a
@@ -53,7 +56,7 @@ function App() {
                 >
                   @tentacles.v
                 </a>
-                <div className="absolute top-full h-6 w-full translate-y-full  group-hover:top-0 group-hover:translate-y-0 transition-all duration-400 border bg-[#67536C] z-10"></div>
+                <div className="absolute h-6 w-full top-0 -translate-x-full group-hover:translate-x-0 transition-all duration-400 border bg-[#67536C] z-10"></div>
               </div>
             </div>
             <div className="group">
@@ -86,10 +89,10 @@ function App() {
             </h2>
 
             <p className="text-[15px] sm:text-[16px] opacity-90 py-2 leading-6 sm:leading-7.5">
-              I design user-focused digital experiences and scalable growth
-              strategies for eCommerce brands, combining UI/UX, marketing,
-              social media, and content shoots to drive engagement and
-              conversions.
+              I lead design and craft social media strategies while managing and
+              scaling eCommerce brands. From user-focused eCommerce design to
+              content shoots, I help brands grow visibility, engagement, and
+              sales.
             </p>
           </div>
           {/* studies */}
@@ -130,15 +133,6 @@ function App() {
             className="transition transform hover:scale-115 hover:text-blue-800"
           >
             <FaLinkedin />
-          </a>
-
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition transform hover:scale-115 hover:text-red-600"
-          >
-            <FaYoutube />
           </a>
 
           <a
