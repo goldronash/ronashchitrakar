@@ -42,18 +42,18 @@ function App() {
         <div className="flex flex-col text-left mt-16 sm:mt-18 gap-4 sm:gap-5 px-6">
           {/* intro */}
           <div className="flex justify-between gap-2 items-center font-poppins">
-            <div className="space-y-1">
+            <div className="space-y-0">
               <h1 className="font-bold text-[22px] sm:text-[24px] text-[#1F242F] leading-6.5">
                 Ronash Chitrakar
               </h1>
-              <div className="relative group opacity-90  text-[14px] sm:text-[16px] cursor-pointer overflow-hidden ">
+              <div className="relative group opacity-90 text-[14px] sm:text-[16px] cursor-pointer overflow-hidden ">
                 <a
                   href="https://www.instagram.com/tentacles.v?igsh=ZTNuZWYydWc3eXM1"
-                  className="text-[6B7387] z-50"
+                  className="relative text-[#6B7387] z-50 group-hover:text-white transition-all px-1 duration-300"
                 >
                   @tentacles.v
                 </a>
-                {/* <div className="absolute top-0 h-6 w-[210px] -translate-x-full group-hover:translate-x-0 transition-all duration-300 border bg-[#353535] z-10"></div> */}
+                <div className="absolute top-full h-6 w-full translate-y-full  group-hover:top-0 group-hover:translate-y-0 transition-all duration-400 border bg-[#67536C] z-10"></div>
               </div>
             </div>
             <div className="group">
