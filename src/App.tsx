@@ -106,12 +106,12 @@ function App() {
         </div>
 
         {/* social media links */}
-        <div className="flex justify-center gap-8 text-2xl my-4 sm:my-7">
+        <div className="flex justify-center gap-8 text-2xl my-6 sm:my-7">
           <a
             href="https://www.facebook.com/share/1HFWKv2ga4/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition transform hover:scale-115 hover:text-blue-600"
+            className="transition transform hover:scale-115 hover:text-[#353535]"
           >
             <FaFacebook />
           </a>
@@ -120,7 +120,7 @@ function App() {
             href="https://www.instagram.com/tentacles.v?igsh=ZTNuZWYydWc3eXM1"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition transform hover:scale-115 hover:text-pink-500"
+            className="transition transform hover:scale-115 hover:text-[#353535] "
           >
             <FaInstagram />
           </a>
@@ -129,7 +129,7 @@ function App() {
             href="https://www.linkedin.com/in/ronash-chitrakar-33500b274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition transform hover:scale-115 hover:text-blue-800"
+            className="transition transform hover:scale-115 hover:text-[#353535] "
           >
             <FaLinkedin />
           </a>
@@ -138,7 +138,7 @@ function App() {
             href="https://www.tiktok.com/@trentttfr?_r=1&_t=ZS-93NzLruZL0u"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition transform hover:scale-115 hover:text-black "
+            className="transition transform hover:scale-115 hover:text-[#353535] "
           >
             <FaTiktok />
           </a>
