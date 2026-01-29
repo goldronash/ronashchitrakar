@@ -49,7 +49,7 @@ function App() {
               <div className="relative group opacity-90 text-[14px] sm:text-[16px] cursor-pointer overflow-hidden ">
                 <a
                   href="https://www.instagram.com/tentacles.v?igsh=ZTNuZWYydWc3eXM1"
-                  className="relative text-[#6B7387] z-50 group-hover:text-white transition-all px-1 duration-300"
+                  className="relative text-[#6B7387] z-50 group-hover:text-white transition-all group-hover:px-2 duration-300"
                 >
                   @tentacles.v
                 </a>
