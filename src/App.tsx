@@ -1,15 +1,31 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTiktok,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import cover from "./assets/covermain.avif";
 import profile from "./assets/profile.png";
 import icon from "./assets/icon2.png";
+import { AnimatePresence,motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
 function App() {
   const phoneNumber = "9779863167897";
   const message = "Hello! I have a question.";
+  const roles = [
+    "Strategy Specialist",
+    "Brand Builder",
+    "Growth Architect",
+    "Digital Strategist",
+  ];
+
+  const [index, setIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % roles.length);
+    }, 2000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div className="w-full md:max-w-7xl md:mx-auto  min-h-dvh flex justify-center items-center text-[#67536C] font-inter ">
@@ -77,17 +93,27 @@ function App() {
             </div>
           </div>
           {/* profile */}
-          <div className="">
-            <h2>
-              <span className="pr-2 font-bold text-[18px] sm:text-[20px]">
+          <div>
+            <h2 className="relative overflow-hidden flex">
+              <span className="pr-2 font-bold text-[18px] sm:text-[20px] border-r-2 border-[#67536C]">
                 PROFILE
               </span>
-              <span className="border-l-2 border-[#67536C]  pl-2 text-[16px] sm:text-[18px] opacity-80">
-                STRATEGY SPECIALIST
-              </span>
+     
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={roles[index]}
+                  initial={{ opacity: 0, y: 8, translateY: 1 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8, translateY: -1 / 2 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  className="pl-2 text-[16px] sm:text-[19px] opacity-80 uppercase"
+                >
+                  {roles[index]}
+                </motion.span>
+              </AnimatePresence>
             </h2>
 
-            <p className="text-[15px] sm:text-[16px] opacity-90 py-2 leading-6 sm:leading-7.5">
+            <p className="text-[15px] sm:text-[16px] opacity-90 py-2 leading-6 sm:leading-7.5 text-[#353535]">
               I lead design and craft social media strategies while managing and
               scaling eCommerce brands. From user-focused eCommerce design to
               content shoots, I help brands grow visibility, engagement, and
